@@ -1,16 +1,16 @@
-import React from 'react'
+import React from 'react';
 
 // Utils
-import { uniqueId } from 'lodash'
+import { uniqueId } from 'lodash';
 
 // Components
-import Clothes from './clothes'
-import Face from './face'
-import Top from './top'
+import Clothes from './clothes';
+import Face from './face';
+import Top from './top';
 
 export const Avatar = ({ avatarStyle, style }) => {
-  const path1 = uniqueId('react-path-')
-  const mask1 = uniqueId('react-mask-')
+  const path1 = uniqueId('react-path-');
+  const mask1 = uniqueId('react-mask-');
   return (
     <svg width={264} height={280}>
       <defs>
@@ -44,5 +44,5 @@ export const Avatar = ({ avatarStyle, style }) => {
       <Face />
       {/* <Top><Accessories /></Top> */}
     </svg>
-  )
-}
+  );
+};

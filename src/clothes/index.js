@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 // Components
-import Switch from './'
-import Hoodie from './Hoodie'
-import ShirtScoopNeck from './ShirtScoopNeck'
+import Switch from './';
+import Hoodie from './Hoodie';
+import ShirtScoopNeck from './ShirtScoopNeck';
 
 const Clothes = () => (
   // <Switch defaultOption={Hoodie}>
-  // <Hoodie />
-  <ShirtScoopNeck />
+  <Hoodie />
+  // <ShirtScoopNeck />
   // </Switch>
-)
+);
 
-export default Clothes
+export default Clothes;

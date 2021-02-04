@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const Default = () => (
   <g
@@ -9,6 +9,6 @@ const Default = () => (
     <circle id='Eye' cx='30' cy='22' r='6'></circle>
     <circle id='Eye' cx='82' cy='22' r='6'></circle>
   </g>
-)
+);
 
-export default Default
+export default Default;

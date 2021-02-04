@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 
 // Utils
-import { uniqueId } from 'lodash'
+import { uniqueId } from 'lodash';
 
 // Components
-import Colors from './Colors'
+import Colors from './Colors';
 
 const Hoodie = ({}) => {
-  const path1 = uniqueId('react-path-')
-  const mask1 = uniqueId('react-mask-')
+  const path1 = uniqueId('react-path-');
+  const mask1 = uniqueId('react-mask-');
 
   return (
     <g transform='translate(0, 170)'>
@@ -47,7 +47,7 @@ const Hoodie = ({}) => {
         </g>
       </g>
     </g>
-  )
-}
+  );
+};
 
-export default Hoodie
+export default Hoodie;
