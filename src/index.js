@@ -4,9 +4,11 @@ import React from 'react';
 import { uniqueId } from 'lodash';
 
 // Components
+import Skin from './skin';
 import Clothes from './clothes';
 import Face from './face';
 import Top from './top';
+// import Accessory from './accessory';
 
 export const Avatar = ({ avatarStyle, style }) => {
   const path1 = uniqueId('react-path-');
@@ -40,9 +42,12 @@ export const Avatar = ({ avatarStyle, style }) => {
           ></polygon>
         </g>
       </g> */}
+      <Skin />
       <Clothes />
       <Face />
-      {/* <Top><Accessories /></Top> */}
+      <Top>
+        {/* <Accessory /> */}
+      </Top>
     </svg>
   );
 };

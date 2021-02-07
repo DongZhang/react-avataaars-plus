@@ -6,7 +6,7 @@ import { uniqueId } from 'lodash';
 // Components
 import Colors from './Colors';
 
-const Hoodie = ({}) => {
+const Hoodie = () => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
 

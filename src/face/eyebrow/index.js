@@ -3,10 +3,10 @@ import React from 'react';
 // Components
 import Default from './Default';
 
-const Eyes = () => (
-  <g transform='translate(0, 6)'>
+const Eyebrow = () => (
+  <g transform='translate(12, 6)'>
     <Default />
   </g>
 );
 
-export default Eyes;
+export default Eyebrow;
