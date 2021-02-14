@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
-import { Avatar } from 'react-avatar-plus'
+import { Avatar } from 'react-avatar-plus';
 
 const App = () => {
-  return <Avatar />
-}
+  return <Avatar avatarConfig={{ skinColor: 'Auburn' }} />;
+};
 
-export default App
+export default App;

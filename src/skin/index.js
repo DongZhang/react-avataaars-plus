@@ -4,9 +4,9 @@ import React from 'react';
 import { uniqueId } from 'lodash';
 
 // Components
-// import SkinColor from './SkinColor'
+import SkinColor from './SkinColor';
 
-const Skin = () => {
+const Skin = ({ skinColor }) => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
 
@@ -18,35 +18,19 @@ const Skin = () => {
           id={path1}
         ></path>
       </defs>
-      <g id='Symbols' stroke='none' strokeWidth='1' fillRule='evenodd'>
-        <g id='Avataaar/Default' transform='translate(32, 36)'>
-          <g id='Body'>
-            {/* transform='translate(32.000000, 36.000000)' */}
-            <mask id={mask1} fill='white'>
-              <use xlinkHref={`#${path1}`}></use>
-            </mask>
-            <use fill='#D0C6AC' xlinkHref={`#${path1}`}></use>
-            {/* <g id='Group' mask={`url(#${mask1})`}>
-              <g id='skin'>
-                <rect
-                  id='skin'
-                  fill='#D08B5B'
-                  x='0'
-                  y='0'
-                  width='264'
-                  height='244'
-                ></rect>
-              </g>
-            </g> */}
-            <path
-              d='M44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,94 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 Z'
-              id='neck-shadow'
-              fillOpacity='0.1'
-              fill='#000000'
-              mask={`url(#${mask1})`}
-            ></path>
-          </g>
-        </g>
+      <g id='skin' transform='translate(32, 36)'>
+        <mask id={mask1} fill='white'>
+          <use xlinkHref={`#${path1}`}></use>
+        </mask>
+        <use fill='#D0C6AC' xlinkHref={`#${path1}`}></use>
+        <SkinColor maskId={`url(#${mask1})`} selectedOption={skinColor} />
+        <path
+          d='M44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,94 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 Z'
+          id='neck-shadow'
+          fillOpacity='0.1'
+          fill='#000000'
+          mask={`url(#${mask1})`}
+        ></path>
       </g>
     </g>
   );
