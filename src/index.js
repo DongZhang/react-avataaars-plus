@@ -14,6 +14,11 @@ export const AvatarContext = createContext({
   skin: 'Blonde',
 });
 
+export const DEFAULT_AVATAR_CONFIG = {
+  hairColor: 'black',
+  skinColor: 'tanned'
+}
+
 const AvatarComponent = ({ avatarStyle, style, avatarConfig }) => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');

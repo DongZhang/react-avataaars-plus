@@ -6,7 +6,7 @@ import { uniqueId } from 'lodash';
 // Components
 import SkinColor from './SkinColor';
 
-const Skin = ({ skinColor }) => {
+const Skin = ({}) => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
 
@@ -23,7 +23,7 @@ const Skin = ({ skinColor }) => {
           <use xlinkHref={`#${path1}`}></use>
         </mask>
         <use fill='#D0C6AC' xlinkHref={`#${path1}`}></use>
-        <SkinColor maskId={`url(#${mask1})`} selectedOption={skinColor} />
+        <SkinColor maskId={`url(#${mask1})`} Î />
         <path
           d='M44,94 C44,124.927946 69.072054,150 100,150 C130.927946,150 156,124.927946 156,94 L156,94 L156,102 C156,132.927946 130.927946,158 100,158 C69.072054,158 44,132.927946 44,102 Z'
           id='neck-shadow'

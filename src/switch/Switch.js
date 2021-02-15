@@ -1,15 +1,19 @@
 import React from 'react';
 
 const Switch = ({ selectedValue, children }) => {
-  let matchedChild = null;
+  const availableOptions = {};
   React.Children.forEach(children, (child) => {
-    const childType = child.type;
-    if (childType.name === selectedValue && child) {
-      matchedChild = child;
-    }
+    const childName = child.type.name;
+    availableOptions[childName.toLowerCase()] = child;
+    console.log(child);
   });
 
-  return matchedChild;
+  if (!availableOptions.hasOwnProperty(selectedValue.toLowerCase())) {
+    console.error(`Value: ${selectedValue} is an invalid value`);
+    return null;
+  }
+
+  return availableOptions[selectedValue.toLowerCase()];
 };
 
 export default Switch;
