@@ -16,8 +16,9 @@ export const AvatarContext = createContext({
 
 export const DEFAULT_AVATAR_CONFIG = {
   hairColor: 'black',
-  skinColor: 'tanned'
-}
+  skinColor: 'tanned',
+  topType: 'shortHairDreads01',
+};
 
 const AvatarComponent = ({ avatarStyle, style, avatarConfig }) => {
   const path1 = uniqueId('react-path-');

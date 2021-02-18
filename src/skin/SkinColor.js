@@ -1,18 +1,18 @@
-import React, { useContext } from 'react';
+import React from 'react';
 
 // Components
-import { AvatarContext, DEFAULT_AVATAR_CONFIG } from '../index';
+import ComponentSelector from '../utils/ComponentSelector';
 
 const makeColor = (name, color, maskId) => {
   const Color = () => (
-    <g id='skin-color' mask={maskId}>
+    <g id={`skin-color-${name}`} mask={maskId}>
       <rect
-        id='skin-rect'
-        fill={color}
+        id={`skin-color-rect-${name}`}
         x='0'
         y='0'
         width='264'
         height='244'
+        fill={color}
       ></rect>
     </g>
   );
@@ -39,19 +39,11 @@ const colorComponents = {
   black: Black,
 };
 
-const SkinColor = ({ maskId }) => {
-  const avatarConfig = useContext(AvatarContext);
-  let { skinColor } = avatarConfig;
-  if (
-    !avatarConfig.skinColor ||
-    !colorComponents.hasOwnProperty(avatarConfig.skinColor)
-  ) {
-    console.error(`${avatarConfig.skinColor} is not a valid skin color option`);
-    skinColor = DEFAULT_AVATAR_CONFIG.skinColor;
-  }
-
-  const Color = colorComponents[skinColor];
-
-  return <Color maskId={maskId} />;
-};
+const SkinColor = ({ maskId }) => (
+  <ComponentSelector
+    componentsMap={colorComponents}
+    maskId={maskId}
+    optionKey='skinColor'
+  />
+);
 export default SkinColor;
