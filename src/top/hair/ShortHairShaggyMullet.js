@@ -6,7 +6,7 @@ import { uniqueId } from 'lodash';
 // Components
 import HairColor from './HairColor';
 
-const ShaggyMullet = () => {
+const ShortHairShaggyMullet = () => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
 
@@ -37,4 +37,4 @@ const ShaggyMullet = () => {
   );
 };
 
-export default ShaggyMullet;
+export default ShortHairShaggyMullet;

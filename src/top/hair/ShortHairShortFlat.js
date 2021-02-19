@@ -6,7 +6,7 @@ import { uniqueId } from 'lodash';
 // Components
 import HairColor from './HairColor';
 
-const ShortFlat = () => {
+const ShortHairShortFlat = () => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
 
@@ -30,4 +30,4 @@ const ShortFlat = () => {
   );
 };
 
-export default ShortFlat;
+export default ShortHairShortFlat;

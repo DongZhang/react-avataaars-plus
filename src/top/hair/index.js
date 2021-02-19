@@ -4,30 +4,30 @@ import React from 'react';
 import ComponentSelector from '../../utils/ComponentSelector';
 import ShortHairDreads01 from './ShortHairDreads01';
 import ShortHairDreads02 from './ShortHairDreads02';
-import Frizzle from './Frizzle';
-import Shaggy from './Shaggy';
-import ShaggyMullet from './ShaggyMullet';
-import ShortCurly from './ShortCurly';
-import ShortFlat from './ShortFlat';
-import ShortRound from './ShortRound';
-import ShortWaved from './ShortWaved';
-import Sides from './Sides';
-import TheCaesar from './TheCaesar';
-import TheCaesarWithSidePart from './TheCaesarWithSidePart';
+import ShortHairFrizzle from './ShortHairFrizzle';
+import ShortHairShaggy from './ShortHairShaggy';
+import ShortHairShaggyMullet from './ShortHairShaggyMullet';
+import ShortHairShortCurly from './ShortHairShortCurly';
+import ShortHairShortFlat from './ShortHairShortFlat';
+import ShortHairShortRound from './ShortHairShortRound';
+import ShortHairShortWaved from './ShortHairShortWaved';
+import ShortHairSides from './ShortHairSides';
+import ShortHairTheCaesar from './ShortHairTheCaesar';
+import ShortHairTheCaesarWithSidePart from './ShortHairTheCaesarWithSidePart';
 
 const componentsMap = {
   shortHairDreads01: ShortHairDreads01,
   shortHairDreads02: ShortHairDreads02,
-  frizzle: Frizzle,
-  shaggy: Shaggy,
-  shaggyMullet: ShaggyMullet,
-  shortCurly: ShortCurly,
-  shortFlat: ShortFlat,
-  shortRound: ShortRound,
-  shortWaved: ShortWaved,
-  sides: Sides,
-  theCaesar: TheCaesar,
-  theCaesarWithSidePart: TheCaesarWithSidePart,
+  shortHairFrizzle: ShortHairFrizzle,
+  shortHairShaggy: ShortHairShaggy,
+  shortHairShaggyMullet: ShortHairShaggyMullet,
+  shortHairShortCurly: ShortHairShortCurly,
+  shortHairShortFlat: ShortHairShortFlat,
+  shortHairShortRound: ShortHairShortRound,
+  shortHairShortWaved: ShortHairShortWaved,
+  shortHairSides: ShortHairSides,
+  shortHairTheCaesar: ShortHairTheCaesar,
+  shortHairTheCaesarWithSidePart: ShortHairTheCaesarWithSidePart,
 };
 
 const Hair = () => (
