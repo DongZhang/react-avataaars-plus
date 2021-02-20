@@ -6,9 +6,9 @@ const App = () => {
   return (
     <Avatar
       avatarConfig={{
-        hairColor: 'black',
+        hairColor: 'red',
         skinColor: 'light',
-        topType: 'shortHairTheCaesarWithSidePart',
+        topType: 'LongHairCurvy',
       }}
     />
   );

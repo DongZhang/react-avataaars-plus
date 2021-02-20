@@ -14,6 +14,8 @@ import ShortHairShortWaved from './ShortHairShortWaved';
 import ShortHairSides from './ShortHairSides';
 import ShortHairTheCaesar from './ShortHairTheCaesar';
 import ShortHairTheCaesarWithSidePart from './ShortHairTheCaesarWithSidePart';
+import LongHairBigHair from './LongHairBigHair';
+import LongHairCurvy from './LongHairCurvy';
 
 const componentsMap = {
   shortHairDreads01: ShortHairDreads01,
@@ -28,6 +30,8 @@ const componentsMap = {
   shortHairSides: ShortHairSides,
   shortHairTheCaesar: ShortHairTheCaesar,
   shortHairTheCaesarWithSidePart: ShortHairTheCaesarWithSidePart,
+  longHairBigHair: LongHairBigHair,
+  longHairCurvy: LongHairCurvy,
 };
 
 const Hair = () => (

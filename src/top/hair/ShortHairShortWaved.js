@@ -29,7 +29,7 @@ const ShortHairShortWaved = () => {
         <mask id={mask1} fill="white">
           <use xlinkHref={`#${path1}`}></use>
         </mask>
-        <use id="short-hair-frizzle" xlinkHref={`#${path1}`}></use>
+        <use id="short-hair-short-waved" xlinkHref={`#${path1}`}></use>
 
         <HairColor maskId={mask1} />
       </g>
