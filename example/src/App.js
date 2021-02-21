@@ -8,7 +8,7 @@ const App = () => {
       avatarConfig={{
         hairColor: 'red',
         skinColor: 'light',
-        topType: 'LongHairFrida',
+        topType: 'LongHairFroBand',
       }}
     />
   );
