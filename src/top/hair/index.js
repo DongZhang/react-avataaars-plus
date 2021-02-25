@@ -20,6 +20,12 @@ import LongHairDreads from './LongHairDreads';
 import LongHairFrida from './LongHairFrida';
 import LongHairFro from './LongHairFro';
 import LongHairFroBand from './LongHairFroBand';
+import LongHairLongButNotTooLong from './LongHairLongButNotTooLong';
+import LongHairMiaWallace from './LongHairMiaWallace';
+import LongHairShavedSides from './LongHairShavedSides';
+import LongHairStraight01 from './LongHairStraight01';
+import LongHairStraight02 from './LongHairStraight02';
+import LongHairStraightStrand from './LongHairStraightStrand';
 
 const componentsMap = {
   shortHairDreads01: ShortHairDreads01,
@@ -40,6 +46,12 @@ const componentsMap = {
   longHairFrida: LongHairFrida,
   longHairFro: LongHairFro,
   longHairFroBand: LongHairFroBand,
+  longHairLongButNotTooLong: LongHairLongButNotTooLong,
+  longHairMiaWallace: LongHairMiaWallace,
+  longHairShavedSides: LongHairShavedSides,
+  longHairStraight01: LongHairStraight01,
+  longHairStraight02: LongHairStraight02,
+  longHairStraightStrand: LongHairStraightStrand,
 };
 
 const Hair = () => (
