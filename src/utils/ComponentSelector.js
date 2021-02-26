@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 
 // Context
-import { AvatarContext } from '../index';
+import AvatarContext from '../context/AvatarContext';
 
 // Constants
-import { DEFAULT_AVATAR_CONFIG } from '../index';
+import { DEFAULT_AVATAR_CONFIG } from '../constant/default';
 
 const toCamelCase = (str) => {
   return str

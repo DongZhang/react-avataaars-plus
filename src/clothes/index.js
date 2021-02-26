@@ -1,15 +1,17 @@
 import React from 'react';
 
 // Components
-import Switch from './';
+import ComponentSelector from '../utils/ComponentSelector';
 import Hoodie from './Hoodie';
 import ShirtScoopNeck from './ShirtScoopNeck';
 
+const componentsMap = {
+  hoodie: Hoodie,
+  shirtScoopNeck: ShirtScoopNeck,
+};
+
 const Clothes = () => (
-  // <Switch defaultOption={Hoodie}>
-  <Hoodie />
-  // <ShirtScoopNeck />
-  // </Switch>
+  <ComponentSelector componentsMap={componentsMap} optionKey="clothType" />
 );
 
 export default Clothes;

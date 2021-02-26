@@ -9,6 +9,8 @@ const App = () => {
         hairColor: 'red',
         skinColor: 'light',
         topType: 'LongHairStraightStrand',
+        accessoryType: 'Kurt',
+        clothType: 'ShirtScoopNeck',
       }}
     />
   );
