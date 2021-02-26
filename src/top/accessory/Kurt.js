@@ -3,7 +3,7 @@ import React from 'react';
 // Utils
 import { uniqueId } from 'lodash';
 
-const ShortHairFrizzle = () => {
+const Kurt = () => {
   const filter1 = uniqueId('react-filter-');
 
   return (
@@ -66,4 +66,4 @@ const ShortHairFrizzle = () => {
   );
 };
 
-export default ShortHairFrizzle;
+export default Kurt;

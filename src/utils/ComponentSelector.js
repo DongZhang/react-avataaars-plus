@@ -24,7 +24,7 @@ const ComponentSelector = ({ componentsMap, maskId, optionKey }) => {
 
   const Component = componentsMap[selectedOption];
 
-  return <Component maskId={maskId} />;
+  return Component ? <Component maskId={maskId} /> : null;
 };
 
 export default ComponentSelector;
