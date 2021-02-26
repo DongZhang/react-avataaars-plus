@@ -11,7 +11,7 @@ const componentsMap = {
 };
 
 const Clothes = () => (
-  <ComponentSelector componentsMap={componentsMap} optionKey="clothType" />
+  <ComponentSelector componentsMap={componentsMap} optionKey="clothesType" />
 );
 
 export default Clothes;

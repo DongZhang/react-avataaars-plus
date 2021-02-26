@@ -8,16 +8,14 @@ const makeColor = (name, color, maskId) => {
     <g id={`skin-color-${name}`} mask={maskId}>
       <rect
         id={`skin-color-rect-${name}`}
-        x='0'
-        y='0'
-        width='264'
-        height='244'
+        x="0"
+        y="0"
+        width="264"
+        height="244"
         fill={color}
       ></rect>
     </g>
   );
-  Color.displayName = name;
-  Color.defaultProps = { name };
   return Color();
 };
 
@@ -43,7 +41,7 @@ const SkinColor = ({ maskId }) => (
   <ComponentSelector
     componentsMap={colorComponents}
     maskId={maskId}
-    optionKey='skinColor'
+    optionKey="skinColor"
   />
 );
 export default SkinColor;

@@ -4,7 +4,7 @@ import React from 'react';
 import { uniqueId } from 'lodash';
 
 // Components
-import Colors from './Colors';
+import ClothesColor from './ClothesColor';
 
 const Hoodie = () => {
   const path1 = uniqueId('react-path-');
@@ -19,7 +19,7 @@ const Hoodie = () => {
         ></path>
       </defs>
       <g
-        id='Symbols'
+        id='clothes-hoodie'
         stroke='none'
         strokeWidth='1'
         fill='none'
@@ -30,7 +30,7 @@ const Hoodie = () => {
             <use xlinkHref={`#${path1}`}></use>
           </mask>
           <use id='Hoodie' fill='#B7C1DB' xlinkHref={`#${path1}`}></use>
-          <Colors maskId={mask1} />
+          <ClothesColor maskId={mask1} />
           <path
             d='M101.999618,61.7388852 L102,110 L95,110 L94.9990839,58.149718 C97.2029904,59.4596568 99.5461861,60.6605136 101.999618,61.7388852 Z M169.001367,58.1494501 L169,98.5 C169,100.432997 167.432997,102 165.5,102 C163.567003,102 162,100.432997 162,98.5 L162.001384,61.7384448 C164.454619,60.6601132 166.797629,59.4593148 169.001367,58.1494501 Z'
             id='Straps'

@@ -44,10 +44,10 @@ const Wayfarers = () => {
           y2="100%"
           id={linearGradient1}
         >
-          <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+          <stop stopColor="#FFFFFF" stopOpacity="0.5" offset="0%"></stop>
           <stop
-            stop-color="#000000"
-            stop-opacity="0.5"
+            stopColor="#000000"
+            stopOpacity="0.5"
             offset="70.5058195%"
           ></stop>
         </linearGradient>
@@ -76,7 +76,7 @@ const Wayfarers = () => {
           <g id="shades" transform="translate(10.795455, 2.928571)">
             <g id="shade1">
               <use
-                fill-opacity="0.700000048"
+                fillOpacity="0.700000048"
                 fill="#000000"
                 xlinkHref={`#${path1}`}
               ></use>
@@ -88,7 +88,7 @@ const Wayfarers = () => {
             </g>
             <g id="shade2">
               <use
-                fill-opacity="0.700000048"
+                fillOpacity="0.700000048"
                 fill="#000000"
                 xlinkHref={`#${path2}`}
               ></use>

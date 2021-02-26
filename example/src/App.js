@@ -7,10 +7,11 @@ const App = () => {
     <Avatar
       avatarConfig={{
         hairColor: 'red',
-        skinColor: 'light',
+        skinColor: 'pale',
         topType: 'LongHairStraightStrand',
         accessoryType: 'Wayfarers',
-        clothType: 'ShirtScoopNeck',
+        clothesType: 'shirtScoopNeck',
+        clothesColor: 'red',
       }}
     />
   );

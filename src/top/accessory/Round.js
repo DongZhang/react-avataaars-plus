@@ -46,7 +46,7 @@ const Round = () => {
         <g id="accessory-round">
           <use
             fill="black"
-            fill-opacity="1"
+            fillOpacity="1"
             filter="url(#filter-2)"
             xlinkHref={`#${path1}`}
           ></use>

@@ -8,17 +8,15 @@ const makeColor = (name, color, maskId) => {
     <g id={`hair-color-${name}`} mask={`url(#${maskId}`}>
       <rect
         id={`hair-color-rect-${name}`}
-        x='0'
-        y='0'
-        width='264'
-        height='280'
+        x="0"
+        y="0"
+        width="264"
+        height="280"
         fill={color}
       />
     </g>
   );
 
-  Color.displayName = name;
-  Color.optionValue = name;
   return Color();
 };
 
@@ -51,7 +49,7 @@ const HairColor = ({ maskId }) => (
   <ComponentSelector
     componentsMap={colorComponents}
     maskId={maskId}
-    optionKey='hairColor'
+    optionKey="hairColor"
   />
 );
 
