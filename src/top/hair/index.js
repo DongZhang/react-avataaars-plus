@@ -27,6 +27,13 @@ import LongHairStraight01 from './LongHairStraight01';
 import LongHairStraight02 from './LongHairStraight02';
 import LongHairStraightStrand from './LongHairStraightStrand';
 import NoHair from './NoHair';
+import WinterHat01 from './WinterHat01';
+import WinterHat02 from './WinterHat02';
+import WinterHat03 from './WinterHat03';
+import WinterHat04 from './WinterHat04';
+import Hat from './Hat';
+import Hijab from './Hijab';
+import Turban from './Turban';
 
 const componentsMap = {
   shortHairDreads01: ShortHairDreads01,
@@ -54,6 +61,13 @@ const componentsMap = {
   longHairStraight02: LongHairStraight02,
   longHairStraightStrand: LongHairStraightStrand,
   noHair: NoHair,
+  winterHat01: WinterHat01,
+  winterHat02: WinterHat02,
+  winterHat03: WinterHat03,
+  winterHat04: WinterHat04,
+  hat: Hat,
+  hijab: Hijab,
+  turban: Turban,
 };
 
 const Hair = () => (

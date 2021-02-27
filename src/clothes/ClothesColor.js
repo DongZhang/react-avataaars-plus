@@ -38,11 +38,11 @@ const White = ({ maskId }) => makeColor('white', '#FFFFFF', maskId);
 
 const colorComponents = {
   black: Black,
-  blue1: Blue1,
-  blue2: Blue2,
-  blue3: Blue3,
-  grey1: Grey1,
-  grey2: Grey2,
+  blue01: Blue1,
+  blue02: Blue2,
+  blue03: Blue3,
+  grey01: Grey1,
+  grey02: Grey2,
   heather: Heather,
   pastelBlue: PastelBlue,
   pastelGreen: PastelGreen,

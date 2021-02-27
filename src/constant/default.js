@@ -9,4 +9,5 @@ export const DEFAULT_AVATAR_CONFIG = {
 
 export const DEFAULT_MINIMUN_CONFIG = {
   topType: 'noHair',
+  clothesColor: 'blue01'
 };
