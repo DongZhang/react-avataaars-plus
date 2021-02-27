@@ -8,8 +8,8 @@ const App = () => {
       avatarConfig={{
         hairColor: 'red',
         skinColor: 'pale',
-        topType: 'LongHairStraightStrand',
-        accessoryType: 'Wayfarers',
+        topType: 'longHairBigHair',
+        accessoryType: 'wayfarers',
         clothesType: 'shirtScoopNeck',
         clothesColor: 'red',
       }}

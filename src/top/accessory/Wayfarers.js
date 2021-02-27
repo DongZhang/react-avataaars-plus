@@ -66,7 +66,7 @@ const Wayfarers = () => {
         strokeWidth="1"
         fill="none"
         fillRule="evenodd"
-        transform="translate(60, 85)"
+        transform="translate(60, 84)"
       >
         <g
           id="accessory-wayfarers"
@@ -81,7 +81,7 @@ const Wayfarers = () => {
                 xlinkHref={`#${path1}`}
               ></use>
               <use
-                fill="url(#linearGradient-2)"
+                fill={`url(#${linearGradient1}`}
                 style={{ mixBlendMode: 'screen' }}
                 xlinkHref={`#${path1}`}
               ></use>
@@ -93,7 +93,7 @@ const Wayfarers = () => {
                 xlinkHref={`#${path2}`}
               ></use>
               <use
-                fill="url(#linearGradient-2)"
+                fill={`url(#${linearGradient1}`}
                 style={{ mixBlendMode: 'screen' }}
                 xlinkHref={`#${path2}`}
               ></use>

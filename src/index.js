@@ -3,6 +3,9 @@ import React, { createContext } from 'react';
 // Utils
 import { uniqueId } from 'lodash';
 
+// Constants
+import { DEFAULT_MINIMUN_CONFIG } from './constant/default';
+
 // Components
 import Skin from './skin';
 import Clothes from './clothes';
@@ -14,7 +17,9 @@ const AvatarComponent = ({ avatarStyle, style, avatarConfig }) => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
   return (
-    <AvatarContext.Provider value={avatarConfig}>
+    <AvatarContext.Provider
+      value={{ ...DEFAULT_MINIMUN_CONFIG, ...avatarConfig }}
+    >
       <svg width={264} height={280}>
         <defs>
           <path

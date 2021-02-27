@@ -26,6 +26,7 @@ import LongHairShavedSides from './LongHairShavedSides';
 import LongHairStraight01 from './LongHairStraight01';
 import LongHairStraight02 from './LongHairStraight02';
 import LongHairStraightStrand from './LongHairStraightStrand';
+import NoHair from './NoHair';
 
 const componentsMap = {
   shortHairDreads01: ShortHairDreads01,
@@ -52,6 +53,7 @@ const componentsMap = {
   longHairStraight01: LongHairStraight01,
   longHairStraight02: LongHairStraight02,
   longHairStraightStrand: LongHairStraightStrand,
+  noHair: NoHair,
 };
 
 const Hair = () => (

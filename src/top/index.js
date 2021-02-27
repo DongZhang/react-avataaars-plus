@@ -6,8 +6,8 @@ import Accessory from './accessory'
 
 const Face = () => (
   <g>
-    <Hair />
     <Accessory />
+    <Hair />
   </g>
 );
 

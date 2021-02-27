@@ -6,3 +6,7 @@ export const DEFAULT_AVATAR_CONFIG = {
   clothesType: 'hoodie',
   clothesColor: 'blue1',
 };
+
+export const DEFAULT_MINIMUN_CONFIG = {
+  topType: 'noHair',
+};
