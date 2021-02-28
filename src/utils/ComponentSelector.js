@@ -16,6 +16,10 @@ const toCamelCase = (str) => {
 
 const ComponentSelector = ({ componentsMap, maskId, optionKey }) => {
   const avatarConfig = useContext(AvatarContext);
+  if (!avatarConfig[optionKey]) {
+    return null;
+  }
+
   let selectedOption = toCamelCase(avatarConfig[optionKey]);
   if (!selectedOption || !componentsMap.hasOwnProperty(selectedOption)) {
     console.error(`${selectedOption} is not a valid ${optionKey} option`);
