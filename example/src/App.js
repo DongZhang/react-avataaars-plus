@@ -9,7 +9,9 @@ const App = () => {
         hairColor: 'red',
         skinColor: 'pale',
         clothesType: 'shirtScoopNeck',
-        mouthType: 'Vomit'
+        mouthType: 'default',
+        // facialHairType: 'MoustacheMagnum',
+        // facialHairColor: 'Black',
       }}
     />
   );
