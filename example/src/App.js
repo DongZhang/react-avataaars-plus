@@ -9,7 +9,7 @@ const App = () => {
         hairColor: 'red',
         skinColor: 'pale',
         clothesType: 'shirtScoopNeck',
-        mouthType: 'Scream'
+        mouthType: 'Vomit'
       }}
     />
   );

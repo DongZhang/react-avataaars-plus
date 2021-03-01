@@ -3,7 +3,7 @@ import React from 'react';
 // Utils
 import { uniqueId } from 'lodash';
 
-const Concerned = () => {
+const Smile = () => {
   const path1 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
 
@@ -16,35 +16,31 @@ const Concerned = () => {
         ></path>
       </defs>
       <g
-        id="mouth-concerned"
+        id="mouth-smile"
         stroke="none"
         strokeWidth="1"
         fill="none"
         fillRule="evenodd"
-        transform="translate(54.003637, 22.500000) scale(1, -1) translate(-54.003637, -22.500000)"
       >
         <mask id={mask1} fill="white">
           <use xlinkHref={`#${path1}`}></use>
         </mask>
         <use
           id="mouth"
-          fillOpacity="0.7"
+          fillOpacity="0.699999988"
           fill="#000000"
           xlinkHref={`#${path1}`}
         ></use>
-        <g mask={`url(#${mask1})`} fill="#FFFFFF">
-          <path
-            d="M44,2 L65,2 C67.7614237,2 70,4.23857625 70,7 L70,13 C70,15.7614237 67.7614237,18 65,18 L44,18 C41.2385763,18 39,15.7614237 39,13 L39,7 C39,4.23857625 41.2385763,2 44,2 Z"
-            id="teeth"
-            fill="#FFFFFF"
-            mask={`url(#${mask1})`}
-            transform="translate(0, 14)"
-          ></path>
-        </g>
+        <path
+          d="M44,2 L65,2 C67.7614237,2 70,4.23857625 70,7 L70,13 C70,15.7614237 67.7614237,18 65,18 L44,18 C41.2385763,18 39,15.7614237 39,13 L39,7 C39,4.23857625 41.2385763,2 44,2 Z"
+          id="teeth"
+          fill="#FFFFFF"
+          mask={`url(#${mask1})`}
+        ></path>
         <g id="tongue" mask={`url(#${mask1})`} fill="#FF4F6D">
-          <g transform="translate(38, 0)">
-            <circle id="tongue1" cx="11" cy="11" r="11"></circle>
-            <circle id="tongue2" cx="21" cy="11" r="11"></circle>
+          <g transform="translate(38.000000, 24.000000)">
+            <circle cx="11" cy="11" r="11"></circle>
+            <circle cx="21" cy="11" r="11"></circle>
           </g>
         </g>
       </g>
@@ -52,4 +48,4 @@ const Concerned = () => {
   );
 };
 
-export default Concerned;
+export default Smile;
