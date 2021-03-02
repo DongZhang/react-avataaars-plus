@@ -12,6 +12,7 @@ const App = () => {
         mouthType: 'default',
         // facialHairType: 'MoustacheMagnum',
         // facialHairColor: 'Black',
+        eyeType: 'Dizzy'
       }}
     />
   );

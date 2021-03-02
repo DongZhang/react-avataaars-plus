@@ -27,7 +27,7 @@ const Smile = () => {
         </mask>
         <use
           id="mouth"
-          fillOpacity="0.699999988"
+          fillOpacity="0.7"
           fill="#000000"
           xlinkHref={`#${path1}`}
         ></use>
