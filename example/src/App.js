@@ -12,7 +12,8 @@ const App = () => {
         mouthType: 'default',
         // facialHairType: 'MoustacheMagnum',
         // facialHairColor: 'Black',
-        eyeType: 'Dizzy'
+        eyeType: 'default',
+        eyebrowType: 'UpDownNatural'
       }}
     />
   );
