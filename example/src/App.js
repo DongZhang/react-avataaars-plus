@@ -8,12 +8,13 @@ const App = () => {
       avatarConfig={{
         hairColor: 'red',
         skinColor: 'pale',
-        clothesType: 'shirtScoopNeck',
+        clothesType: 'ShirtVNeck',
+        clothesColor: 'blue01',
         mouthType: 'default',
         // facialHairType: 'MoustacheMagnum',
         // facialHairColor: 'Black',
         eyeType: 'default',
-        eyebrowType: 'UpDownNatural'
+        eyebrowType: 'default'
       }}
     />
   );
