@@ -8,8 +8,9 @@ const App = () => {
       avatarConfig={{
         hairColor: 'red',
         skinColor: 'pale',
-        clothesType: 'ShirtVNeck',
+        clothesType: 'graphicShirt',
         clothesColor: 'blue01',
+        graphicType: 'skullOutline',
         mouthType: 'default',
         // facialHairType: 'MoustacheMagnum',
         // facialHairColor: 'Black',
