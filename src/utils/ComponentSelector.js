@@ -7,6 +7,9 @@ import AvatarContext from '../context/AvatarContext';
 import { DEFAULT_AVATAR_CONFIG } from '../constant/default';
 
 const toCamelCase = (str) => {
+  if (!str) {
+    return str;
+  }
   return str
     .replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) => {
       return index === 0 ? word.toLowerCase() : word.toUpperCase();
@@ -16,13 +19,17 @@ const toCamelCase = (str) => {
 
 const ComponentSelector = ({ componentsMap, maskId, optionKey }) => {
   const avatarConfig = useContext(AvatarContext);
+  let selectedOption;
   if (!avatarConfig[optionKey]) {
-    return null;
+    selectedOption = DEFAULT_AVATAR_CONFIG[optionKey] || null;
   }
+  selectedOption = toCamelCase(avatarConfig[optionKey]);
 
-  let selectedOption = toCamelCase(avatarConfig[optionKey]);
-  if (!selectedOption || !componentsMap.hasOwnProperty(selectedOption)) {
+  if (!selectedOption) {
+    selectedOption = DEFAULT_AVATAR_CONFIG[optionKey];
+  } else if (!componentsMap.hasOwnProperty(selectedOption)) {
     console.error(`${selectedOption} is not a valid ${optionKey} option`);
+
     selectedOption = DEFAULT_AVATAR_CONFIG[optionKey];
   }
 

@@ -1,15 +1,9 @@
 export const DEFAULT_AVATAR_CONFIG = {
-  hairColor: 'black',
-  skinColor: 'tanned',
-  topType: 'shortHairShortFlat',
-  accessoryType: null,
-  clothesType: 'hoodie',
-  clothesColor: 'blue1',
-  mouthType: 'default'
-};
-
-export const DEFAULT_MINIMUN_CONFIG = {
+  skinColor: 'pale',
   topType: 'noHair',
+  eyeType: 'default',
+  eyebrowType: 'default',
+  mouthType: 'default',
+  clothesType: 'hoodie',
   clothesColor: 'blue01',
-  accessoryType: null,
 };

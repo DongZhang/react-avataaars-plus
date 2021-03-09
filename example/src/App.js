@@ -6,16 +6,16 @@ const App = () => {
   return (
     <Avatar
       avatarConfig={{
-        hairColor: 'red',
+        // hairColor: 'red',
         skinColor: 'pale',
-        clothesType: 'graphicShirt',
-        clothesColor: 'blue01',
-        graphicType: 'skullOutline',
-        mouthType: 'default',
+        // clothesType: 'graphicShirt',
+        // clothesColor: 'blue01',
+        // graphicType: 'skullOutline',
+        // mouthType: 'default',
         // facialHairType: 'MoustacheMagnum',
         // facialHairColor: 'Black',
-        eyeType: 'default',
-        eyebrowType: 'default'
+        // eyeType: 'default',
+        // eyebrowType: 'default'
       }}
     />
   );
