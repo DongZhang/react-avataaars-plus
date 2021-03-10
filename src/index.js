@@ -10,43 +10,54 @@ import Face from './face';
 import Top from './top';
 import AvatarContext from './context/AvatarContext';
 
-const AvatarComponent = ({ avatarStyle, style, avatarConfig }) => {
+const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
   const path1 = uniqueId('react-path-');
+  const path2 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
+  const mask2 = uniqueId('react-mask-');
+  const circled = avatarStyle.toLowerCase() === 'circle';
+
   return (
     <AvatarContext.Provider value={{ ...avatarConfig }}>
-      <svg width={264} height={280}>
+      <svg width={264} height={280} style={style} viewBox="0 0 264 280">
         <defs>
+          <circle id={path1} cx="120" cy="120" r="120"></circle>
           <path
-            d="M264,0 L264,280 L232,280 L232,271 C232,231.235498 199.764502,199 160,199 L160,199 L156,199 L156.001014,180.610469 C173.531251,172.282329 186.048207,155.114429 187.791415,134.867236 C193.568906,134.002616 198,129.018777 198,123 L198,123 L198,110 C198,104.05429 193.675838,99.1185422 188.000809,98.1660527 L188,92 C188,61.072054 162.927946,36 132,36 C101.072054,36 76,61.072054 76,92 L76,92 L76.0001873,98.1658855 C70.3246685,99.1179645 66,104.053942 66,110 L66,110 L66,123 C66,129.018777 70.4310943,134.002616 76.2090181,134.867253 C77.9518263,155.114813 90.4692242,172.28298 107.999984,180.610943 L108,199 L104,199 C64.633143,199 32.6454629,230.594012 32.0096459,269.809348 L32,271 L32,280 L0,280 L0,0 L264,0 Z"
-            id={path1}
-          ></path>
+            d="M12,160 C12,226.27417 65.72583,280 132,280 C198.27417,280 252,226.27417 252,160 L264,160 L264,-1.42108547e-14 L-3.19744231e-14,-1.42108547e-14 L-3.19744231e-14,160 L12,160 Z"
+            id={path2}
+          />
         </defs>
-
-        {/* <g
-        id='Symbols'
-        stroke='none'
-        strokeWidth='1'
-        fill='none'
-        fillRule='evenodd'
-      >
-        <g id='template-for-hairstyles'>
-          <mask id={mask1} fill='white'>
-            <use xlinkHref={`#${path1}`}></use>
-          </mask>
-          <g id='Mask-Hair'></g>
-          <polygon
-            id='Long-Hair'
-            fill='#944F23'
-            mask={`url(#${mask1})`}
-            points='0 0 264 0 264 280 0 280'
-          ></polygon>
+        {circled && [
+          <g id="circle" transform="translate(12, 40)">
+            <mask id={mask1} fill="white">
+              <use xlinkHref={`#${path1}`}></use>
+            </mask>
+            <use
+              id="circle-gackground"
+              fill="white"
+              xlinkHref={`#${path1}`}
+            ></use>
+            <g
+              id="group"
+              mask={`url(#${mask1}
+            )`}
+              fill="#65C9FF"
+            >
+              <g id="circle-color">
+                <rect id="color" x="0" y="0" width="240" height="240"></rect>
+              </g>
+            </g>
+          </g>,
+          <mask id={mask2} fill="white">
+            <use xlinkHref={`#${path2}`} transform="translate(0, -0)" />
+          </mask>,
+        ]}
+        <g mask={`url(#${mask2})`} id="avatar">
+          <Skin />
+          <Clothes />
+          <Face />
+          <Top />
         </g>
-      </g> */}
-        <Skin />
-        <Clothes />
-        <Face />
-        <Top />
       </svg>
     </AvatarContext.Provider>
   );
@@ -56,7 +67,7 @@ export const Avatar = ({ avatarStyle, style, avatarConfig }) => {
   return (
     <AvatarComponent
       avatarStyle={avatarStyle}
-      sylte={style}
+      style={style}
       avatarConfig={avatarConfig}
     />
   );
