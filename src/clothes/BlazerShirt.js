@@ -25,7 +25,7 @@ const BlazerShirt = () => {
         id="clothes-blazer-shirt"
         transform="translate(0, 170)"
       >
-        <g id="shirt">
+        <g id="shirt" transform="translate(32, 29)">
           <mask id={mask1} fill="white">
             <use xlinkHref={`#${path1}`}></use>
           </mask>
@@ -37,7 +37,7 @@ const BlazerShirt = () => {
             fill="#000000"
             fillOpacity="0.16"
           >
-            <g transform="translate(60.000000, -25.000000)">
+            <g transform="translate(60, -25)">
               <ellipse
                 cx="40.5"
                 cy="27.8476251"
@@ -47,7 +47,7 @@ const BlazerShirt = () => {
             </g>
           </g>
         </g>
-        <g id="blazer" transform="translate(32.000000, 28.000000)">
+        <g id="blazer" transform="translate(32, 28)">
           <path
             d="M64,40.5 C64,55.7092257 65.9608691,69.9209213 69.3620096,82.0011822 L0,82 L0,73.0517235 C1.24427061e-14,34.3646678 30.512279,2.80413671 68.7847355,1.12223161 C65.7400343,12.7307619 64,26.1727873 64,40.5 Z M200,73.0517235 L200,82 L131.63799,82.0011822 C135.039131,69.9209213 137,55.7092257 137,40.5 C137,26.194165 135.265154,12.7708778 132.228695,1.1737534 C170.025091,3.36299447 200,34.7068514 200,73.0517235 Z"
             id="blazer-body"
