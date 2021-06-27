@@ -5,11 +5,11 @@ import { Avatar } from 'react-avatar-plus';
 const App = () => {
   return (
     <Avatar
-      avatarStyle="circle"
+      avatarStyle="transparent"
       style={{ height: 280, width: 280 }}
       avatarConfig={
         {
-          // hairColor: 'red',
+          hairColor: 'red',
           // skinColor: 'pale',
           // clothesType: 'BlazerShirt',
           // clothesColor: 'blue02',
@@ -19,6 +19,7 @@ const App = () => {
           // facialHairColor: 'Black',
           // eyeType: 'default',
           // eyebrowType: 'default',
+          topType: 'Hat'
         }
       }
     />

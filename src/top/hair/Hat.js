@@ -15,14 +15,7 @@ const Hat = () => {
           id={path1}
         ></path>
       </defs>
-      <g
-        id="hat"
-        stroke="none"
-        strokeWidth="1"
-        fill="none"
-        fillRule="evenodd"
-        transform="translate(-1, 0)"
-      >
+      <g id="hat" stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <mask id={mask1} fill="white">
           <use xlinkHref={`#${path1}`}></use>
         </mask>
