@@ -16,7 +16,6 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
   const mask1 = uniqueId('react-mask-');
   const mask2 = uniqueId('react-mask-');
   const circled = avatarStyle.toLowerCase() === 'circle';
-
   return (
     <AvatarContext.Provider value={{ ...avatarConfig }}>
       <svg width={264} height={280} style={style} viewBox="0 0 264 280">
@@ -28,7 +27,7 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
           />
         </defs>
         {circled && [
-          <g id="circle" transform="translate(12, 40)">
+          <g id="circle" transform="translate(12, 40)" key="circle">
             <mask id={mask1} fill="white">
               <use xlinkHref={`#${path1}`}></use>
             </mask>
@@ -48,7 +47,7 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
               </g>
             </g>
           </g>,
-          <mask id={mask2} fill="white">
+          <mask id={mask2} fill="white" key="white">
             <use xlinkHref={`#${path2}`} transform="translate(0, -0)" />
           </mask>,
         ]}
