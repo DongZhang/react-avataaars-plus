@@ -15,7 +15,7 @@ const Grimace = () => {
       <g
         id="mouth-grimace"
         stroke="none"
-        strokeWFidth="1"
+        strokeWidth="1"
         fill="none"
         fillRule="evenodd"
       >

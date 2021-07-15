@@ -11,7 +11,7 @@ const App = () => {
         {
           hairColor: 'red',
           // skinColor: 'pale',
-          // clothesType: 'BlazerShirt',
+          clothesType: 'BlazerSweater',
           // clothesColor: 'blue02',
           // graphicType: 'skullOutline',
           // mouthType: 'default',
@@ -19,7 +19,7 @@ const App = () => {
           // facialHairColor: 'Black',
           // eyeType: 'default',
           // eyebrowType: 'default',
-          topType: 'Hat'
+          topType: 'LongHairBigHair'
         }
       }
     />
