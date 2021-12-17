@@ -20,8 +20,8 @@ const componentsMap = {
   eyePatch: EyePatch,
 };
 
-const Hair = () => (
+const Accessory = () => (
   <ComponentSelector componentsMap={componentsMap} optionKey="accessoryType" />
 );
 
-export default Hair;
+export default Accessory;

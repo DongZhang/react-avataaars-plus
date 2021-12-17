@@ -4,6 +4,7 @@ import React, { createContext } from 'react';
 import { uniqueId } from 'lodash';
 
 // Components
+import PieceComponent from './piece';
 import Skin from './skin';
 import Clothes from './clothes';
 import Face from './face';
@@ -62,12 +63,12 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
   );
 };
 
-export const Avatar = ({ avatarStyle, style, avatarConfig }) => {
-  return (
-    <AvatarComponent
-      avatarStyle={avatarStyle}
-      style={style}
-      avatarConfig={avatarConfig}
-    />
-  );
-};
+export const Piece = (props) => <PieceComponent {...props} />;
+
+export const Avatar = ({ avatarStyle, style, avatarConfig }) => (
+  <AvatarComponent
+    avatarStyle={avatarStyle}
+    style={style}
+    avatarConfig={avatarConfig}
+  />
+);

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // Components
-import Eyebrow from './eyebrow';
+import Eyebrow from './eyebrows';
 import Eyes from './eyes';
 import Nose from './nose';
 import Mouth from './mouth';

@@ -7,9 +7,9 @@ import FacialHair from './facialHair';
 
 const Face = () => (
   <g>
+    <FacialHair />
     <Accessory />
     <Hair />
-    <FacialHair />
   </g>
 );
 
