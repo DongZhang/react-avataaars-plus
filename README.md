@@ -25,6 +25,8 @@ class Example extends Component {
 }
 ```
 
+if you would like to contribute, run `yarn start` from root folder ,then go into example folder and run `yarn install` then `yarn start` to run the project locally.
+
 ## License
 
 MIT © [DongZhang](https://github.com/DongZhang)

@@ -7,11 +7,11 @@ const App = () => {
     <>
       <Piece
         type="topType"
-        value="LongHairBigHair"
+        value="ShortHairFrizzle"
         pieceColorType="hairColor"
         pieceColorValue="Auburn"
       />
-      {/* <Avatar
+      <Avatar
         avatarStyle="transparent"
         style={{ height: 280, width: 280 }}
         avatarConfig={{
@@ -28,7 +28,7 @@ const App = () => {
           topType: 'WinterHat02',
           accessoryType: 'Kurt',
         }}
-      /> */}
+      />
     </>
   );
 };

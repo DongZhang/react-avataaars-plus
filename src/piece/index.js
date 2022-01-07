@@ -38,7 +38,12 @@ const Piece = ({
   };
   return (
     <AvatarContext.Provider value={{ ...avatarConfig }}>
-      <svg width={width} height={height} style={style} viewBox="0 0 264 280">
+      <svg
+        width={width}
+        height={height}
+        style={{ ...style }}
+        viewBox="0 0 264 280"
+      >
         {getChildrenComponent()}
       </svg>
     </AvatarContext.Provider>
