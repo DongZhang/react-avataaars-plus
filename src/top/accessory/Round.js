@@ -50,7 +50,7 @@ const Round = () => {
             filter="url(#filter-2)"
             xlinkHref={`#${path1}`}
           ></use>
-          <use fill="#252C2F" fill-rule="evenodd" xlinkHref={`#${path1}`}></use>
+          <use fill="#252C2F" fillRule="evenodd" xlinkHref={`#${path1}`}></use>
         </g>
       </g>
     </g>
