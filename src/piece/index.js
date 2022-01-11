@@ -9,8 +9,10 @@ import Nose from '../face/nose';
 import Top from '../top';
 import Skin from '../skin';
 import Face from '../face';
-
+import HairColor from '../top/hair/HairColor';
 import AvatarContext from '../context/AvatarContext';
+import SkinColor from '../skin/SkinColor';
+import FacialHairColor from '../top/facialHair/FacialHairColor';
 
 const Piece = ({
   type,
@@ -25,13 +27,20 @@ const Piece = ({
     [type]: value,
     [pieceColorType]: pieceColorValue,
   };
-  console.log(avatarConfig);
   const getChildrenComponent = () => {
     switch (type) {
       case 'accessoryType':
       case 'facialHairType':
       case 'topType':
         return <Top />;
+      case 'hairColor':
+        return <HairColor />;
+      case 'facialHairColor':
+        return <FacialHairColor />;
+      case 'skinColor':
+        return <SkinColor />;
+      case 'eyebrowType':
+        return <Eyebrow />;
       default:
         return null;
     }

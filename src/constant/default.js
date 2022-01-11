@@ -6,4 +6,6 @@ export const DEFAULT_AVATAR_CONFIG = {
   mouthType: 'default',
   clothesType: 'hoodie',
   clothesColor: 'blue01',
+  hairColor: 'auburn',
+  facialHairColor: 'auburn',
 };
