@@ -41,6 +41,12 @@ const Piece = ({
         return <SkinColor />;
       case 'eyebrowType':
         return <Eyebrow />;
+      case 'mouthType':
+        return <Mouth />;
+      case 'eyeType':
+        return <Eye />;
+      case 'eyebrowType':
+        return <Eyebrow />;
       default:
         return null;
     }
