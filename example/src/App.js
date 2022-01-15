@@ -6,8 +6,8 @@ const App = () => {
   return (
     <>
       <Piece
-        type="accessoryType"
-        value="Kurt"
+        type="graphicType"
+        value="Bat"
         // pieceColorType="hairColor"
         // pieceColorValue="Auburn"
       />

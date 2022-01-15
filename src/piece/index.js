@@ -5,15 +5,13 @@ import Clothes from '../clothes';
 import Eyebrow from '../face/eyebrows';
 import Eye from '../face/eyes';
 import Mouth from '../face/mouth';
-import Nose from '../face/nose';
 import Top from '../top';
-import Skin from '../skin';
-import Face from '../face';
 import HairColor from '../top/hair/HairColor';
 import AvatarContext from '../context/AvatarContext';
 import SkinColor from '../skin/SkinColor';
 import FacialHairColor from '../top/facialHair/FacialHairColor';
 import ClothesColor from '../clothes/ClothesColor';
+import Graphics from '../clothes/Graphics';
 
 const Piece = ({
   type,
@@ -52,6 +50,8 @@ const Piece = ({
         return <Clothes />;
       case 'clothesColor':
         return <ClothesColor />;
+      case 'graphicType':
+        return <Graphics />;
       default:
         return null;
     }
