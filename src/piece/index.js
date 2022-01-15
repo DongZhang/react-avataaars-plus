@@ -13,6 +13,7 @@ import HairColor from '../top/hair/HairColor';
 import AvatarContext from '../context/AvatarContext';
 import SkinColor from '../skin/SkinColor';
 import FacialHairColor from '../top/facialHair/FacialHairColor';
+import ClothesColor from '../clothes/ClothesColor';
 
 const Piece = ({
   type,
@@ -47,6 +48,10 @@ const Piece = ({
         return <Eye />;
       case 'eyebrowType':
         return <Eyebrow />;
+      case 'clothesType':
+        return <Clothes />;
+      case 'clothesColor':
+        return <ClothesColor />;
       default:
         return null;
     }
