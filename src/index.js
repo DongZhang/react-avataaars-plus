@@ -9,6 +9,7 @@ import Skin from './skin';
 import Clothes from './clothes';
 import Face from './face';
 import Top from './top';
+import Handheld from './handheld';
 import AvatarContext from './context/AvatarContext';
 
 const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
@@ -57,6 +58,7 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
           <Clothes />
           <Face />
           <Top />
+          <Handheld />
         </g>
       </svg>
     </AvatarContext.Provider>
