@@ -16,7 +16,7 @@ const IceCream = () => {
           transform="translate(31.000000, 19.000000)"
           fillRule="nonzero"
         >
-          <g id="ice-cream-svgrepo-com">
+          <g id="ice-cream">
             <circle id="Oval" fill="#FFE6FF" cx="24" cy="13" r="13"></circle>
             <circle id="Oval" fill="#663333" cx="35" cy="26" r="13"></circle>
             <circle id="Oval" fill="#FFAD1A" cx="13" cy="26" r="13"></circle>
