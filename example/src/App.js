@@ -18,8 +18,7 @@ const App = () => {
           avatarStyle="transparent"
           style={{ height: 280, width: 280 }}
           avatarConfig={{
-            // accessoryType: 'Kurt',
-            handheldType: 'Fries',
+            handheldType: 'juice',
           }}
         />
       </div>
