@@ -12,6 +12,7 @@ import Tea from './Tea';
 import Wine from './Wine';
 import Coffee from './Coffee';
 import MatchaLatte from './MatchaLatte';
+import Burger from './Burger';
 
 const componentsMap = {
   beer: Beer,
@@ -24,6 +25,7 @@ const componentsMap = {
   wine: Wine,
   coffee: Coffee,
   matchaLatte: MatchaLatte,
+  burger: Burger,
 };
 
 const Handheld = () => (
