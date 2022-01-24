@@ -21,6 +21,7 @@ const makeColor = (name, color, maskId) => {
 
 const Tanned = ({ maskId }) => makeColor('Tanned', '#FD9841', maskId);
 const Yellow = ({ maskId }) => makeColor('Yellow', '#F8D25C', maskId);
+const WarmIvory = ({ maskId }) => makeColor('WarmIvory', '#ffcd94', maskId);
 const Pale = ({ maskId }) => makeColor('Pale', '#FFDBB4', maskId);
 const Light = ({ maskId }) => makeColor('Light', '#EDB98A', maskId);
 const Brown = ({ maskId }) => makeColor('Brown', '#D08B5B', maskId);
@@ -35,6 +36,7 @@ const colorComponents = {
   brown: Brown,
   darkBrown: DarkBrown,
   black: Black,
+  warmIvory: WarmIvory
 };
 
 const SkinColor = ({ maskId }) => (

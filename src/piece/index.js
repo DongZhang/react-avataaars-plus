@@ -12,6 +12,7 @@ import SkinColor from '../skin/SkinColor';
 import FacialHairColor from '../top/facialHair/FacialHairColor';
 import ClothesColor from '../clothes/ClothesColor';
 import Graphics from '../clothes/Graphics';
+import Handheld from '../handheld';
 
 const Piece = ({
   type,
@@ -52,6 +53,8 @@ const Piece = ({
         return <ClothesColor />;
       case 'graphicType':
         return <Graphics />;
+      case 'handheldType':
+        return <Handheld />;
       default:
         return null;
     }

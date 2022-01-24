@@ -19,6 +19,7 @@ const App = () => {
           style={{ height: 280, width: 280 }}
           avatarConfig={{
             handheldType: 'Burger',
+            skinColor: 'WarmIvory'
           }}
         />
       </div>
