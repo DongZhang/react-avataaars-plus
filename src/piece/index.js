@@ -13,6 +13,7 @@ import FacialHairColor from '../top/facialHair/FacialHairColor';
 import ClothesColor from '../clothes/ClothesColor';
 import Graphics from '../clothes/Graphics';
 import Handheld from '../handheld';
+import BackgroundColor from '../background/BackgroundColor';
 
 const Piece = ({
   type,
@@ -55,6 +56,8 @@ const Piece = ({
         return <Graphics />;
       case 'handheldType':
         return <Handheld />;
+      case 'backgroundColor':
+        return <BackgroundColor />;
       default:
         return null;
     }

@@ -10,14 +10,16 @@ import Clothes from './clothes';
 import Face from './face';
 import Top from './top';
 import Handheld from './handheld';
+import BackgroundColor from './background/BackgroundColor';
 import AvatarContext from './context/AvatarContext';
 
-const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
+const AvatarComponent = ({ avatarStyle = 'circle', style, avatarConfig }) => {
   const path1 = uniqueId('react-path-');
   const path2 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
   const mask2 = uniqueId('react-mask-');
   const circled = avatarStyle.toLowerCase() === 'circle';
+  const solid = avatarStyle.toLowerCase() === 'solid';
   return (
     <AvatarContext.Provider value={{ ...avatarConfig }}>
       <svg width={264} height={280} style={style} viewBox="0 0 264 280">
@@ -28,6 +30,11 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
             id={path2}
           />
         </defs>
+        {solid && (
+          <g id="solid-background" transform="translate(-8, 0)">
+            <BackgroundColor />
+          </g>
+        )}
         {circled && [
           <g id="circle" transform="translate(12, 40)" key="circle">
             <mask id={mask1} fill="white">
@@ -38,16 +45,7 @@ const AvatarComponent = ({ avatarStyle = '', style, avatarConfig }) => {
               fill="white"
               xlinkHref={`#${path1}`}
             ></use>
-            <g
-              id="group"
-              mask={`url(#${mask1}
-            )`}
-              fill="#65C9FF"
-            >
-              <g id="circle-color">
-                <rect id="color" x="0" y="0" width="240" height="240"></rect>
-              </g>
-            </g>
+            <BackgroundColor maskId={mask1} />
           </g>,
           <mask id={mask2} fill="white" key="white">
             <use xlinkHref={`#${path2}`} transform="translate(0, -0)" />

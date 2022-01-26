@@ -11,7 +11,7 @@ const makeColor = (name, color, maskId) => {
       fillRule="evenodd"
       fill={color}
     >
-      <rect id={`color-rect-${name}`} x="0" y="0" width="264" height="110" />
+      <rect id="color" x="0" y="0" width="280" height="280"></rect>
     </g>
   );
 
@@ -54,12 +54,14 @@ const colorComponents = {
   white: White,
 };
 
-const ClothesColor = ({ maskId }) => (
-  <ComponentSelector
-    componentsMap={colorComponents}
-    maskId={maskId}
-    optionKey="clothesColor"
-  />
-);
+const BackgroundColor = ({ maskId }) => {
+  return (
+    <ComponentSelector
+      componentsMap={colorComponents}
+      maskId={maskId}
+      optionKey="backgroundColor"
+    />
+  );
+};
 
-export default ClothesColor;
+export default BackgroundColor;

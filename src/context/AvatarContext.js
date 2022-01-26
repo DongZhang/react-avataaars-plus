@@ -1,7 +1,5 @@
 import React, { createContext } from 'react';
 
-const AvatarContext = createContext({
-  skin: 'Blonde',
-});
+const AvatarContext = createContext({});
 
 export default AvatarContext;

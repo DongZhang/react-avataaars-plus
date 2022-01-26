@@ -24,7 +24,6 @@ const ComponentSelector = ({ componentsMap, maskId, optionKey }) => {
     selectedOption = DEFAULT_AVATAR_CONFIG[optionKey] || null;
   }
   selectedOption = toCamelCase(avatarConfig[optionKey]);
-
   if (!selectedOption) {
     selectedOption = DEFAULT_AVATAR_CONFIG[optionKey];
   } else if (!componentsMap.hasOwnProperty(selectedOption)) {

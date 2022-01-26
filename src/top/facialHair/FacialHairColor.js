@@ -5,7 +5,7 @@ import ComponentSelector from '../../utils/ComponentSelector';
 
 const makeColor = (name, color, maskId) => {
   const Color = () => (
-    <g id={`hair-color-${name}`} mask={`url(#${maskId}`}>
+    <g id={`hair-color-${name}`} mask={`url(#${maskId})`}>
       <rect
         id={`hair-color-rect-${name}`}
         x="0"

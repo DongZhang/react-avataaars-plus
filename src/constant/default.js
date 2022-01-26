@@ -8,4 +8,5 @@ export const DEFAULT_AVATAR_CONFIG = {
   clothesColor: 'blue01',
   hairColor: 'auburn',
   facialHairColor: 'auburn',
+  backgroundColor: 'blue03',
 };
