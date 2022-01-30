@@ -1,10 +1,10 @@
 {
-  "name": "react-avatar-plus",
-  "version": "1.0.1",
+  "name": "react-avataaars-plus",
+  "version": "1.0.0",
   "description": "A react avatar component",
   "author": "DongZhang",
   "license": "MIT",
-  "repository": "DongZhang/react-avatar-plus",
+  "repository": "DongZhang/react-avataaars-plus",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
