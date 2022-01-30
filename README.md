@@ -1,8 +1,8 @@
-# react-avatar-plus
+# react-avataaars-plus
 
 A react avatar component inspired by [Avataaars](https://github.com/fangpenlin/avataaars), based on Sketch library [Avataaars](https://avataaars.com/)
 
-[![NPM](https://img.shields.io/npm/v/react-avatar-plus.svg)](https://www.npmjs.com/package/react-avatar-plus) 
+[![NPM](https://img.shields.io/npm/v/react-avataaars-plus.svg)](https://www.npmjs.com/package/react-avataaars-plus) 
 
 # Features
 - SVG based
@@ -33,7 +33,7 @@ npm install --save react-avataaars-plus
 ```jsx
 import React, { Component } from 'react'
 
-import Avatar from 'react-avatar-plus'
+import Avatar from 'react-avataaars-plus'
 
 class MyApp extends Component {
   render() {
