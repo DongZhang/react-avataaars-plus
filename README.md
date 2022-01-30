@@ -1,6 +1,6 @@
 # react-avatar-plus
 
-A react avatar component inspired by [Avataaars](https://github.com/fangpenlin/avataaars), 
+A react avatar component inspired by [Avataaars](https://github.com/fangpenlin/avataaars), based on Sketch library [Avataaars](https://avataaars.com/)
 
 [![NPM](https://img.shields.io/npm/v/react-avatar-plus.svg)](https://www.npmjs.com/package/react-avatar-plus) 
 
