@@ -1,13 +1,31 @@
 # react-avatar-plus
 
-> A react avatar component
+A react avatar component inspired by [Avataaars](https://github.com/fangpenlin/avataaars), 
 
-[![NPM](https://img.shields.io/npm/v/react-avatar-plus.svg)](https://www.npmjs.com/package/react-avatar-plus) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/react-avatar-plus.svg)](https://www.npmjs.com/package/react-avatar-plus) 
+
+# Features
+- SVG based
+- Light weight
+- Scalable
+- Easy to use
+- Easy to integrate with custom editor
+
+## What's in the plus
+- 11 new handheld items
+- Configurable background colors available for solid & circled backgrounds
+- New WarmIvory skin color 
+- A few minor svg display bug fixes
 
 ## Install
 
+install react-avataaars-plus with npm
 ```bash
-npm install --save react-avatar-plus
+npm install --save react-avataaars-plus
+```
+or  yarn
+```bash
+npm install --save react-avataaars-plus
 ```
 
 ## Usage
@@ -15,17 +33,32 @@ npm install --save react-avatar-plus
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-avatar-plus'
-import 'react-avatar-plus/dist/index.css'
+import Avatar from 'react-avatar-plus'
 
-class Example extends Component {
+class MyApp extends Component {
   render() {
-    return <MyComponent />
+    return 
+      <Avatar
+        avatarStyle="circle"
+        style={{ height: 280, width: 280 }}
+        avatarConfig={{
+          skinColor: 'warmIvory',
+          backgroundColor: 'blue03',
+          topType: 'shortHairDreads01',
+          hairColor: 'black',
+          eyeType: 'happy',
+          eyebrowType: 'default',
+          mouthType: 'smile',
+          clothesType: 'hoodie',
+          clothesColor: 'pastelBlue',
+          handheldType: 'juice'
+        }}
+      />
   }
 }
 ```
 
-if you would like to contribute, run `yarn start` from root folder ,then go into example folder and run `yarn install` then `yarn start` to run the project locally.
+if you would like to see full examples run `yarn start` from root folder,then go into example folder and run `yarn install` then `yarn start` to run the project locally.
 
 ## License
 
