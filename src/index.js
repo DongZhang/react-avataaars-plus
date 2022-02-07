@@ -22,7 +22,7 @@ const AvatarComponent = ({ avatarStyle = 'circle', style, avatarConfig }) => {
   const solid = avatarStyle.toLowerCase() === 'solid';
   return (
     <AvatarContext.Provider value={{ ...avatarConfig }}>
-      <svg width={264} height={280} style={style} viewBox="0 0 264 280">
+      <svg width={280} height={280} style={style} viewBox="0 0 264 280">
         <defs>
           <circle id={path1} cx="120" cy="120" r="120"></circle>
           <path
