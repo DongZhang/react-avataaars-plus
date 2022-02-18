@@ -233,7 +233,6 @@ const componentsMap = {
   pizza: Pizza,
   resist: Resist,
   selena: Selena,
-  skull: Skull,
   skullOutline: SkullOutline,
 };
 
