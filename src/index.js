@@ -13,7 +13,7 @@ import Handheld from './handheld';
 import BackgroundColor from './background/BackgroundColor';
 import AvatarContext from './context/AvatarContext';
 
-const AvatarComponent = ({ style, avatarConfig }) => {
+const AvatarComponent = ({ style, avatarConfig = {} }) => {
   const path1 = uniqueId('react-path-');
   const path2 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');

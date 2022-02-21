@@ -7,7 +7,7 @@ const App = () => {
     <Avatar
       style={{ height: 280, width: 280 }}
       avatarConfig={{
-        // avatarStyle: 'solid',
+        avatarStyle: 'solid',
         backgroundColor: 'blue03',
         skinColor: 'warmIvory',
         topType: 'shortHairDreads01',
