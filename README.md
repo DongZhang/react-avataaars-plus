@@ -39,9 +39,9 @@ class MyApp extends Component {
   render() {
     return 
       <Avatar
-        avatarStyle="circle"
         style={{ height: 280, width: 280 }}
         avatarConfig={{
+          avatarStyle="circle",
           skinColor: 'warmIvory',
           backgroundColor: 'blue03',
           topType: 'shortHairDreads01',

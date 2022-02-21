@@ -5,9 +5,9 @@ import { Avatar } from 'react-avatar-plus';
 const App = () => {
   return (
     <Avatar
-      avatarStyle="circle"
       style={{ height: 280, width: 280 }}
       avatarConfig={{
+        // avatarStyle: 'solid',
         backgroundColor: 'blue03',
         skinColor: 'warmIvory',
         topType: 'shortHairDreads01',
@@ -17,7 +17,7 @@ const App = () => {
         mouthType: 'smile',
         clothesType: 'hoodie',
         clothesColor: 'pastelBlue',
-        handheldType: 'tea'
+        handheldType: 'tea',
       }}
     />
   );

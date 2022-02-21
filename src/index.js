@@ -1,7 +1,7 @@
-import React, { createContext } from 'react';
+import React from 'react';
 
 // Utils
-import { uniqueId } from 'lodash';
+import { uniqueId, get } from 'lodash';
 
 // Components
 import PieceComponent from './piece';
@@ -13,13 +13,15 @@ import Handheld from './handheld';
 import BackgroundColor from './background/BackgroundColor';
 import AvatarContext from './context/AvatarContext';
 
-const AvatarComponent = ({ avatarStyle = 'circle', style, avatarConfig }) => {
+const AvatarComponent = ({ style, avatarConfig }) => {
   const path1 = uniqueId('react-path-');
   const path2 = uniqueId('react-path-');
   const mask1 = uniqueId('react-mask-');
   const mask2 = uniqueId('react-mask-');
-  const circled = avatarStyle.toLowerCase() === 'circle';
-  const solid = avatarStyle.toLowerCase() === 'solid';
+  const circled = avatarConfig.avatarStyle
+    ? avatarConfig.avatarStyle.toLowerCase() === 'circle'
+    : true;
+  const solid = get(avatarConfig, 'avatarStyle', '').toLowerCase() === 'solid';
   return (
     <AvatarContext.Provider value={{ ...avatarConfig }}>
       <svg width={280} height={280} style={style} viewBox="0 0 264 280">
@@ -65,10 +67,6 @@ const AvatarComponent = ({ avatarStyle = 'circle', style, avatarConfig }) => {
 
 export const Piece = (props) => <PieceComponent {...props} />;
 
-export const Avatar = ({ avatarStyle, style, avatarConfig }) => (
-  <AvatarComponent
-    avatarStyle={avatarStyle}
-    style={style}
-    avatarConfig={avatarConfig}
-  />
+export const Avatar = ({ style, avatarConfig }) => (
+  <AvatarComponent style={style} avatarConfig={avatarConfig} />
 );
